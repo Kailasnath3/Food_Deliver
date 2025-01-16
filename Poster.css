@@ -1,0 +1,305 @@
+/* General Layout */
+.poster-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+  width: 100%;
+}
+
+.poster {
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  background-color: #f7dbdb;
+  border-radius: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.poster-text {
+  font-size: 14px;
+  font-weight: 300;
+  color: red;
+}
+
+.cherry-logo {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+/* Heading Section */
+.poster-heading {
+  text-align: left;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.poster-heading h1,
+.poster-heading h2 {
+  font-size: 4vw;
+  font-weight: bold;
+  color: black;
+}
+
+.food-text {
+  color: red;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.subheading {
+  color: #4f4c4c;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.get-started-button {
+  padding: 10px 20px;
+  background-color: #ff6161;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.get-started-button:hover {
+  background-color: #d00000;
+}
+
+.watch-video {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.play-button {
+  background-color: white;
+  color: yellow;
+  font-size: 18px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.watch-video-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Text & Image Container */
+.text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures wrapping for small screens */
+  width: 100%;
+}
+
+.text-content {
+  flex: 1;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.large-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .poster-heading h1,
+  .poster-heading h2 {
+    font-size: 6vw;
+  }
+
+  .food-text {
+    font-size: 6vw;
+  }
+
+  .subheading {
+    font-size: 1rem;
+  }
+
+  .text-content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    margin-top: 10px;
+  }
+
+  .large-image {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .poster-heading h1,
+  .poster-heading h2 {
+    font-size: 8vw;
+  }
+
+  .food-text {
+    font-size: 7vw;
+  }
+
+  .large-image {
+    max-width: 250px;
+  }
+
+  .play-button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .watch-video-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .poster {
+    width: 95%;
+  }
+
+  .poster-heading {
+    text-align: center;
+  }
+
+  .poster-heading h1,
+  .poster-heading h2 {
+    font-size: 10vw;
+  }
+
+  .food-text {
+    font-size: 9vw;
+  }
+
+  .text-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .large-image {
+    max-width: 200px;
+  }
+
+  .play-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .watch-video-text {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.decorative-image {
+  width: 400px;
+  height: 150px;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+.poster2-container {
+  width: 100%;
+  max-width: 600px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 100px;
+  margin-top: 150px;
+  background-color: #f4f4f4;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cover-image {
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  max-height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Food Selection Section */
+
+
+
+
+
+
+
+
+ 

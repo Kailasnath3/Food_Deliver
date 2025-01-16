@@ -1,0 +1,77 @@
+/* PosterSecond Container */
+.poster2-container {
+    width: 100%; /* Full width to fit any screen size */
+    max-width: 800px; /* Restrict maximum size for larger screens */
+    height: auto; /* Let the height adjust based on content */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin: 50px auto; /* Center the container within the viewport */
+    background-color: #f4f4f4;
+    padding: 10px; /* Add some padding for better spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Poster2 Cover Image */
+  .poster2-cover-image {
+    width: 100%; /* Image should scale with the container */
+    max-width: 100%; /* Prevent the image from exceeding container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fills the container properly */
+    border-radius: 10px; /* Rounded corners for aesthetic design */
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Large Screens (Desktops) */
+  @media (min-width: 1200px) {
+    .poster2-container {
+      max-width: 1000px; /* Increase container size on large screens */
+      margin-top: 100px; /* More space for larger screens */
+    }
+  
+    .poster2-cover-image {
+      max-width: 90%; /* Slight margin around the image */
+    }
+  }
+  
+  /* Medium Screens (Tablets) */
+  @media (max-width: 1024px) {
+    .poster2-container {
+      padding: 15px; /* Increase padding for tablets */
+      margin-top: 50px; /* Reduce top margin */
+    }
+  
+    .poster2-cover-image {
+      max-width: 95%; /* Slightly reduce image width for tablets */
+      border-radius: 8px; /* Adjust the radius for smaller screens */
+    }
+  }
+  
+  /* Small Screens (Phones) */
+  @media (max-width: 768px) {
+    .poster2-container {
+      padding: 10px; /* Adjust padding for small screens */
+      margin-top: 30px; /* Reduce top margin */
+    }
+  
+    .poster2-cover-image {
+      max-width: 100%; /* Ensure the image spans the screen width */
+      border-radius: 5px; /* Reduce border radius for smaller devices */
+    }
+  }
+  
+  /* Extra Small Screens (Very Small Phones) */
+  @media (max-width: 480px) {
+    .poster2-container {
+      padding: 5px; /* Minimal padding for very small screens */
+      margin-top: 20px; /* Minimal top margin */
+    }
+  
+    .poster2-cover-image {
+      max-width: 100%; /* Full width for extra small screens */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 3px; /* Small border radius for tiny devices */
+    }
+  }
+  

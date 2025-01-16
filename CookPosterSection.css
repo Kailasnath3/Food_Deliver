@@ -1,0 +1,139 @@
+
+.cook-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .cook-poster-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .cook-poster {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .cook-heading {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .cook-heading-sub {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .cook-heading-main {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
+  .paragraph {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .ad-poster-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .ad-poster {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1200px) {
+    .cook-heading-main {
+      font-size: 2rem;
+    }
+  
+    .cook-heading-sub {
+      font-size: 1.25rem;
+    }
+  
+    .paragraph {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .cook-poster-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cook-heading {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .cook-heading-main {
+      font-size: 1.8rem;
+    }
+  
+    .cook-heading-sub {
+      font-size: 1.1rem;
+    }
+  
+    .paragraph {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cook-heading-main {
+      font-size: 1.5rem;
+    }
+  
+    .cook-heading-sub {
+      font-size: 1rem;
+    }
+  
+    .paragraph {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .cook-heading-main {
+      font-size: 1.2rem;
+    }
+  
+    .cook-heading-sub {
+      font-size: 0.9rem;
+    }
+  
+    .paragraph {
+      font-size: 0.75rem;
+    }
+  
+    .ad-poster {
+      max-width: 100%;
+    }
+  }
+  

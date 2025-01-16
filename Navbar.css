@@ -1,0 +1,172 @@
+/* General Navbar Styles */
+.navbar-custom {
+  background-color: #fff5f5;
+  padding: 10px 20px;
+}
+
+.navbar-brand-custom {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar-brand-text {
+  font-weight: bold;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensure elements wrap on small screens */
+}
+
+.nav-link-custom {
+  color: black;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: red !important;
+}
+
+.nav-dropdown-custom .dropdown-menu {
+  text-align: left;
+}
+
+.dropdown-title {
+  color: black;
+}
+
+.dropdown-arrow {
+  color: red;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 20px;
+}
+
+.search-input {
+  border-radius: 20px;
+  padding: 5px 15px;
+  width: 180px;
+  border: 1px solid #ddd;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  color: #999;
+}
+
+.login-button-container {
+  margin-left: 10px;
+}
+
+.login-button {
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 15px;
+  font-weight: bold;
+  border: none;
+}
+
+.login-button:hover {
+  background-color: darkred;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .navbar-links {
+    gap: 15px;
+  }
+
+  .search-input {
+    width: 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
+
+  .search-form {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .nav-link-custom,
+  .dropdown-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-link-custom {
+    font-size: 0.85rem;
+  }
+
+  .navbar-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar-brand-text {
+    font-size: 1.2rem;
+  }
+
+  .search-input {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    width: 100%;
+  }
+
+  .login-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand-text {
+    font-size: 1rem;
+  }
+
+  .nav-link-custom {
+    font-size: 0.8rem;
+  }
+
+  .search-input {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+    width: 100%;
+  }
+
+  .login-button {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

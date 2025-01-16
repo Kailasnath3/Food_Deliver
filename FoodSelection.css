@@ -1,0 +1,136 @@
+/* General Styling for Food Selection Component */
+.food-selection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+  
+  .food-selection-button {
+    background-color: #f7dbdb;
+    color: #333;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 2px solid #d00000;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .food-selection-button:hover {
+    background-color: #d00000;
+    color: white;
+  }
+  
+  .food-selection-button.selected {
+    background-color: #d00000;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .food-heading {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .food-subheading {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #4f4c4c;
+  }
+  
+  .food-heading-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+  }
+  
+  .food-images-container-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+  
+  .food-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .food-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .food-heading-text {
+      font-size: 1.6rem;
+    }
+  
+    .food-subheading {
+      font-size: 1rem;
+    }
+  
+    .food-selection-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .food-image {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .food-heading-text {
+      font-size: 1.4rem;
+    }
+  
+    .food-subheading {
+      font-size: 0.9rem;
+    }
+  
+    .food-selection-button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  
+    .food-image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .food-heading {
+      margin: 10px auto;
+    }
+  
+    .food-heading-text {
+      font-size: 1.2rem;
+    }
+  
+    .food-subheading {
+      font-size: 0.8rem;
+    }
+  
+    .food-selection-button {
+      font-size: 0.7rem;
+      padding: 5px 10px;
+    }
+  
+    .food-image {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
